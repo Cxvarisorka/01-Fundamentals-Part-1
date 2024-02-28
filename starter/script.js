@@ -177,3 +177,70 @@
 // არ გამოიყენოთ ეს გზა მომავალში ამაზე ვისაუბრებთ!!
 
 
+// მარტივი ოპერატორები
+
+// მარტივად ოპერატორები გვეხმარება იმაში რომ შევქმნათ მნიშვნელობები ან გავაერთიანოთ მნიშვნელობები
+// არსებობს ბევრი ტიპის ოპერატორები მაგალითად ლოგიკური ოპერატორები, მნიშვნელობის მინიჭების ოპერატორები, ლოგიკური ოპერატორები
+// მათემათიკური ოპერატორები და ბევრი სხვა
+
+// Math Operators
+// const currentYear = 2050;
+
+// const ageLuka = currentYear - 2006;
+// const ageMari = currentYear - 2020;
+
+// console.log(ageLuka, ageMari); // 44 30
+
+// console.log(ageLuka * 2); // 88
+// console.log(ageLuka / 2); // 22
+// console.log(2 ** 3); // 2 * 2 * 2
+
+// const firstName = "Luka";
+// const lastName = "Tskhvaradze";
+// console.log(firstName + " " + lastName); // სტრინგების შეერთება, ანუ კობინაცია
+
+// console.log(typeof firstName) // string
+
+// // Assigment Operators
+// let x = 10 + 5; // = ეს ტოლობა არის თვითონ ოპერატორი რომელიც გამოიყენება მნიშვნელობის მინიჭებისთვის
+
+// x += 10; // x = x + 10 result is 25
+// x -= 5; // x = x - 5 result is 20
+// x *= 2; // x = x * 2 result is 40
+// x /= 2; // x = x / 2 result is 20
+
+// x++; // x = x + 1 result is 21
+// x--; // x = x - 1 result is 20
+
+// console.log(x); // 15
+
+// // Comparison Operators
+// // ჩვენ ვიყენებთ შედარების ოპერატორებს რომ ვაწარმოოთ Boolean მნიშვნელობები
+
+// console.log(ageLuka > ageMari); // true
+// console.log(ageLuka < ageMari); // false
+// console.log(ageLuka == ageMari); // false
+// console.log(ageLuka === ageMari); // false
+// console.log(ageLuka >= ageMari); // true
+// console.log(ageLuka <= ageMari); // false
+
+// const isFullAge = ageMari >= 18; // isFullAge = true
+
+// ოპერატორების უპირატესობები
+
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence
+
+// const firstName = "Luka";
+// const job = "programmer";
+// const birthYear = 2006;
+
+// const info = "Hello my name is " + firstName + ", my job is " + job + ", born in " + (2024 - birthYear);
+
+// // ალბათ გაგიჩნდებათ შეკიტხვა როგორ შეგვიძლია რიცხვისა და სტრინგის შეერთება
+// // ჯავასკრიპტი როცა დაინახავს რომ ჩვენ გვინდა შევაერთოთ რიცხვი და სტრინგ
+// // რიცხვს ავტომატორად გარდაქმნის სტრინგად
+
+// const infoNew = `Hello my name is ${firstName}, my job is ${job}, born in ${2024 - birthYear}.`;
+
+// console.log(info);
+// console.log(infoNew);
